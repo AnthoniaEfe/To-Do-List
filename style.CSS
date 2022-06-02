@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  background: rgb(176, 76, 9);
+  position: relative;
+  overflow: scroll;
+}
+
+main {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 72px;
+  font-weight: 900;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#left {
+  padding: 10px;
+  margin: 3px;
+  margin-bottom: 0px;
+  float: left;
+  width: 40%;
+}
+
+#right {
+  padding: 10px;
+  margin: 3px;
+  margin-bottom: 0px;
+  float: right;
+  width: 50%;
+}
+
+#toDoTitle {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 20px auto 20px auto;
+  font-size: 20px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+#toDoDescription {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  margin: 20px auto 20px auto;
+  font-size: 20px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+#addButton,
+#updateButton {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 20px auto 20px auto;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+#updateButton:hover,
+#addButton:hover {
+  background-color: rgb(145, 253, 145);
+  color: black;
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+ul {
+  list-style-position: inside;
+  list-style: none;
+  width: 100%;
+  font-size: 16px;
+  padding-right: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+ul li {
+  margin: 6px;
+  padding: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+  word-wrap: break-word;
+  border-color: black;
+  border-bottom: solid 2px;
+  border-radius: 0 0 10% 10%;
+}
+
+ul li:hover {
+  background-color: rgb(218, 218, 218);
+  color: black;
+  transform: scale(1.02);
+  transition: 0.3s;
+  border-color: rgb(0, 0, 0);
+}
+
+#liSpan {
+  padding: 3px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: justify;
+  justify-content: space-between;
+}
+
+.toDoTitle {
+  font-size: 18px;
+  font-weight: 800;
+  flex-grow: 9;
+  margin: 0 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#myDropdown {
+  padding-top: 3px;
+  word-wrap: normal;
+  border-top: solid 1px;
+  border-color: black;
+}
+#pen {
+  flex-grow: 0.9;
+  font-size: 17px;
+  margin: 0 2px;
+  cursor: pointer;
+  background-color: rgb(9, 177, 9);
+  color: white;
+  padding: 2px 3px;
+  text-align: center;
+  cursor: pointer;
+  align-self: center;
+  border: solid 0.2px;
+  border-color: rgb(9, 177, 9);
+  border-radius: 30%;
+}
+
+#trash-can {
+  flex-grow: 0.9;
+  font-size: 17px;
+  margin: 0 2px;
+  cursor: pointer;
+  background-color: rgb(225, 102, 7);
+  color: white;
+  padding: 2px 3px;
+  text-align: center;
+  border: solid 0.2px;
+  border-color: rgb(225, 102, 7);
+  border-radius: 30%;
+}
+
+#pen:hover {
+  background-color: rgb(3, 122, 3);
+}
+
+#trash-can:hover {
+  background-color: rgb(167, 74, 4);
+}
+
+.showDetail {
+  display: block;
+}
