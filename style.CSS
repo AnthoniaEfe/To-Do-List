@@ -11,9 +11,13 @@ body {
 }
 
 body {
-  background: rgb(176, 76, 9);
+  /* background-image: url("./office-implements-black-table.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background: rgb(243, 238, 238);
   position: relative;
-  overflow: scroll;
+  overflow: auto;
 }
 
 main {
@@ -21,18 +25,21 @@ main {
   overflow-y: auto;
 }
 
-h1 {
+header {
+  color: black;
   text-align: center;
-  letter-spacing: 2px;
-  font-size: 72px;
+  letter-spacing: 1px;
+  font-size: 55px;
   font-weight: 900;
   padding-bottom: 5px;
   margin: 0 auto;
-  color: black;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Dancing Script", cursive;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
 }
-
+hr {
+  margin: 0px;
+}
 .container {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -57,6 +64,8 @@ h1 {
 }
 
 #toDoTitle {
+  color: rgb(72, 72, 72);
+  background-color: rgba(152, 185, 223, 0.4);
   display: block;
   width: 100%;
   height: 40px;
@@ -67,6 +76,7 @@ h1 {
 }
 
 #toDoDescription {
+  color: rgb(72, 72, 72);
   display: block;
   width: 100%;
   height: 50vh;
@@ -78,6 +88,7 @@ h1 {
 
 #addButton,
 #updateButton {
+  background-color: rgba(156, 194, 237, 0.8);
   display: block;
   width: 100%;
   height: 40px;
@@ -88,7 +99,7 @@ h1 {
 
 #updateButton:hover,
 #addButton:hover {
-  background-color: rgb(145, 253, 145);
+  background-color: rgb(78, 126, 181);
   color: black;
   transform: scale(1.02);
   transition: 0.3s;
@@ -113,6 +124,8 @@ ul li {
   border-color: black;
   border-bottom: solid 2px;
   border-radius: 0 0 10% 10%;
+  background-color: rgba(152, 185, 223, 0.4);
+  color: rgb(72, 72, 72);
 }
 
 ul li:hover {
@@ -149,42 +162,25 @@ ul li:hover {
   border-top: solid 1px;
   border-color: black;
 }
-#pen {
+#pen,
+#trash-can {
   flex-grow: 0.9;
-  font-size: 17px;
+  font-size: 20px;
   margin: 0 2px;
   cursor: pointer;
-  background-color: rgb(9, 177, 9);
-  color: white;
+  background-color: rgb(256, 256, 256, 0);
+  color: rgb(72, 72, 72);
   padding: 2px 3px;
   text-align: center;
   cursor: pointer;
   align-self: center;
-  border: solid 0.2px;
-  border-color: rgb(9, 177, 9);
-  border-radius: 30%;
 }
 
-#trash-can {
-  flex-grow: 0.9;
-  font-size: 17px;
-  margin: 0 2px;
-  cursor: pointer;
-  background-color: rgb(225, 102, 7);
-  color: white;
-  padding: 2px 3px;
-  text-align: center;
-  border: solid 0.2px;
-  border-color: rgb(225, 102, 7);
-  border-radius: 30%;
-}
-
-#pen:hover {
-  background-color: rgb(3, 122, 3);
-}
-
+#pen:hover,
 #trash-can:hover {
-  background-color: rgb(167, 74, 4);
+  color: black;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .showDetail {
